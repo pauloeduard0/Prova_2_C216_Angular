@@ -1,0 +1,26 @@
+<h1>Tabela de Cursos</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="row">ID</th>
+        <th scope="row">Descrição</th>
+        <th scope="row">Carga Horária</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <ng-container *ngFor="let c of cursos">
+        <tr>
+          <td> {{c.id}} </td>
+          <td> {{c.descricao}} </td>
+          <td> {{c.cargaHoraria}} </td>
+        </tr>
+
+      </ng-container>
+
+    </tbody>
+
+</table>
+
